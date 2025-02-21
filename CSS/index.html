@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            
+          
+            background-image: url("background.png");
+            background-size: 40% 40%;
+            background-repeat:none;
+            background-attachment: fixed; /*background will not moves as you scroll*/
+        }
+
+        
+
+        header {
+            display: flex; /* Use Flexbox for layout */
+            justify-content: space-between; /* Space between title and navigation */
+            align-items: left center; /* Center items vertically */
+            padding: 10px 20px; /*Padding around the header*/
+
+            
+        }
+
+        h1 {
+            font-size:40px;
+            margin-top:10px;
+            margin-left:25px;
+            color:black; 
+            font-family: Times,"Times New Roman",Helvetica, Arial, Georgia, Tahoma;
+            font-weight:normal ;
+            display:block;
+            margin-bottom:0;
+            margin-top:0;
+            padding-bottom:0;
+            padding-top:0;
+        }
+
+        .navbar {
+            display: flex; /* Use Flexbox for navigation */
+            justify-content: flex-end; /* Align items to the right */
+            list-style-type: none; /* Remove bullet points */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        .navbar li {
+            margin-left: 20px; /* Space between navigation items */
+        }
+
+        .navbar a { /* Only applies to the tag with a. */
+            color: black; /* Link color */
+            text-decoration: none; /* Remove underline */
+            padding: 10px; /* Padding for links */
+        }
+        
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Background on hover */
+        }
+
+        #header-image {
+            display: inline-block;
+            vertical-align: middle; /* Adjust vertical alignment */
+            height: 80px; 
+            width: 330px;
+        }
+
+        #border-image{
+            height: 10px; 
+            width: 800px;
+            margin-left:230px;
+            margin-bottom:0;
+            margin-top:0;
+            padding-bottom:0;
+            padding-top:0;
+        }
+
+        /* body */
+
+        p{
+            font-size: 20px;
+            font-weight:bold;
+            font-family: Times,"Times New Roman",Helvetica, Arial, Georgia, Tahoma;
+            padding-bottom:0;
+            margin-bottom:0;
+
+        }
+
+        p1{
+            font-size: 20px;
+            font-family: Times,"Times New Roman",Helvetica, Arial, Georgia, Tahoma;
+            margin-left: 0; 
+            margin-right: 0; 
+            margin-top:0;
+        }
+
+        .row {
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Optional: space between items */
+            margin: 0 -5px; /* Adjust margin to counteract padding */
+        }
+
+        /* Three image containers */
+        .column {
+            flex: 1; /* Allow each column to take equal space */
+            padding: 5px; /* Padding around images */
+            margin-top:30px;
+
+        }
+        /* Adjust the image sizes. */
+        .column img {
+        width: 100%; 
+        height: 230px; 
+        object-fit: cover; 
+        }
+
+
+        footer {
+            background-color: rgb(218, 59, 44);
+            min-height: 130px;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 30px; 
+        }
+
+        .QR, .Email {
+
+            margin: 0; 
+        }
+
+
+
+    </style>
+</head>
+
+
+
+
+<body>
+    <!-- the header class allows the header to be styled locally -->
+    <header class="header1"> 
+
+        <img id= header-image src="CSSS image.png" alt="Title" width="300" height="300">
+        <ul class="navbar">
+            <li><a href="index.html">About</a></li>   
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">Join Us!</a></li>
+        </ul>
+
+    </header>
+    <header class="header2">
+        <h1>Consular Society of Shanghai (CSS)</h1>
+    </header>
+
+    <header class="header3">
+        <h2>
+            <img id=border-image src="border.png" alt="border">
+        </h2>
+    </header>
+
+
+
+    <!-- Body -->
+    <section class="section1">
+        <p>Who are we? </p>
+        <p1>  
+            Founded over 25 years ago, the Consular Society of Shanghai (CSS), previously
+            known as the Consular Spouses of Shanghai, is non-profit and apolitical. CSS aims to create
+            a supportive and engaging community for diplomatic spouses and consulates diplomatic staff within positing
+            in Shanghai.
+
+        </p1>
+  
+
+        <div class="row">
+            <div class="column">
+                <img id="Whoarewe" src="IMG_3650.png">
+            </div>
+            <div class="column">
+                <img id="Whoarewe" src="IMG_3418.png">
+            </div>
+            <div class="column">
+                <img id="Whoarewe" src="IMG_3664.png">
+            </div>
+        </div>
+
+
+        <footer class="footer">
+
+            <!-- Fix the email link. -->
+            <div class="QR">
+                <a
+                    href="consularsocietyshanghai@gmail.com">
+                    <img src="QR.png">
+                </a>
+            </div>
+            <div class="Email">
+                <a
+                    href="consularsocietyshanghai@gmail.com">
+                    <img src="Email.png">
+                </a>
+            </div>
+
+        </footer>
+
+    </section>
+    
+
+
+</body>
+</html>
+

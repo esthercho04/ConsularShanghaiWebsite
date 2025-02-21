@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            
+            background-image: url("background.png");
+            background-size: 40% 40%;
+            background-repeat:none;
+            background-attachment: fixed; /*background will not moves as you scroll*/
+        }
+
+
+        header {
+            display: flex; /* Use Flexbox for layout */
+            justify-content: space-between; /* Space between title and navigation */
+            align-items: left center; /* Center items vertically */
+            padding:10px 20px; /*Padding around the header*/
+            background-color:white; /* Red background for header */
+            
+        }
+
+        .navbar {
+            display: flex; /* Use Flexbox for navigation */
+            justify-content: flex-end; /* Align items to the right */
+            list-style-type: none; /* Remove bullet points */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        .navbar li {
+            margin-left: 20px; /* Space between navigation items */
+        }
+
+        .navbar a { /* Only applies to the tag with a. */
+            color: black; /* Link color */
+            text-decoration: none; /* Remove underline */
+            padding: 10px; /* Padding for links */
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Background on hover */
+        }
+
+        #header-image {
+            display: inline-block;
+            vertical-align: middle; /* Adjust vertical alignment */
+            height: 80px; 
+            width: 300px;
+        }
+
+        h1 {
+            font-size:30px;
+            margin-top:10px;
+            margin-left:100px;
+            color:black; 
+            font-family: Times,"Times New Roman",Helvetica, Arial, Georgia, Tahoma;
+            font-weight:bold ;
+            display:block;
+            margin-bottom:0;
+            margin-top:0;
+            padding-bottom:0;
+            padding-top:0;
+        }
+
+        h2 {
+            font-size:20px;
+            margin-top:10px;
+            margin-left:100px;
+            color:black; 
+            font-family: Times,"Times New Roman",Helvetica, Arial, Georgia, Tahoma;
+            font-weight:normal ;
+            display:block;
+            margin-bottom:0;
+            margin-top:0;
+            padding-bottom:0;
+            padding-top:0;
+        }
+
+
+        .roles{
+
+            display: flex;
+            flex-direction: column;
+            font-weight:bold;
+            margin:50px;
+        }
+
+        .names{
+            margin-top:0;
+            font-weight:normal;
+
+        }
+    </style>
+    
+
+
+
+
+
+
+</head>
+<body>
+
+    <header class="header1"> 
+
+        <img id= header-image src="CSSS image.png" alt="Title" width="300" height="300">
+        <ul class="navbar">
+            <li><a href="index.html">About</a></li>   
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">Join Us!</a></li>
+        </ul>
+
+
+    </header>
+    <h1>
+        Meet the Team 
+    </h1>
+    <h2>
+        CSS Board 2024-2025
+    </h2>
+
+    <section>
+        <div class="roles">
+            <p>President<p class="names"> Ms.Ratanawadee Winther (Denmark)</p>   </p>
+            <p>Vice President<p class="names"> Mr. Nuno Rodrigues (Portugal)</p></p>
+            <p>Event Coordinator<p class="names"> Ms. Joan HsiangKu Lai (Canada)</p></p>
+            <p>Treasurer<p class="names"> Ms.Dhian Harumingtias (Indonesia)</p></p>
+            <p>Communication Coordinator<p class="names"> TBA</p></p>
+
+        </div>
+  
+        
+
+
+    </section>
+    
+
+</body>
+</html>
